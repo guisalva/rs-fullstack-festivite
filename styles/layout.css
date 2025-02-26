@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 32% 68%;
   gap: 20px;
+
   padding: 20px;
 
   height: 100dvh;
@@ -16,6 +17,7 @@ main {
 }
 
 aside {
+  max-height: 100dvh;
   max-width: 25rem;
   margin-left: auto;
 
@@ -26,6 +28,7 @@ main {
   max-width: 51.25rem;
 
   background-color: var(--shape-body);
+  overflow: auto;
 }
 
 

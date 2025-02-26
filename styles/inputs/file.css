@@ -1,0 +1,31 @@
+.file-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.custom-file-btn {
+  display: flex;
+  gap: 0.75rem;
+
+  background-color: var(--shape-button);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+
+
+input[type="file"] {
+  all: unset;
+  position: absolute;
+
+  padding-left: 142px;
+  padding-block: 12px;
+
+  cursor: pointer;
+
+  &::-webkit-file-upload-button {
+    display: none;
+  }
+}

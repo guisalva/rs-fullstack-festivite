@@ -1,13 +1,42 @@
-input {
+input,
+textarea {
   background-color: var(--input-base);
   color: var(--text-heading);
+  width: 100%;
+
+  border-radius: 8px;
   border: 2px solid transparent;
   outline: 1px solid var(--input-stroke);
-  border-radius: 8px;
 
   padding: 13px 16px;
 
-  &:focus {
-    outline-color: var(--brand-light);
+  font: var(--font-body-sm);
+
+  &::placeholder {
+    color: var(--input-placeholder);
   }
+}
+
+textarea {
+  font: var(--font-body-sm);
+  min-height: 8.5rem;
+}
+
+input[type="datetime-local"] {
+  color: var(--input-placeholder);
+  text-transform: uppercase;
+
+  &:focus,
+  &:valid {
+    color: var(--text-heading);
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+input:focus {
+  outline-color: var(--brand-light);
+  outline-offset: 0.1px;
 }
