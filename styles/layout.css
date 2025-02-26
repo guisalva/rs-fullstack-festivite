@@ -22,28 +22,10 @@ aside {
   background: url("../assets/background.png") no-repeat center/cover;
 }
 
-.aside-container {
-  padding: 32px;
-
-  & img {
-    width: 2.865rem;
-    height: 3rem;
-  }
-
-  & .aside-content {
-    & h1 {
-      font: var(--font-logo);
-      color: var(--pink);
-    }
-
-    & p {
-      color: var(--text-heading);
-    }
-  }
-}
-
 main {
   max-width: 51.25rem;
 
   background-color: var(--shape-body);
 }
+
+

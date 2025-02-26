@@ -1,0 +1,59 @@
+.main-container {
+  width: 35rem;
+  margin-inline: auto;
+  padding-block: 5rem;
+
+  & h2 {
+    font: var(--font-heading-md);
+    color: var(--text-heading);
+  }
+
+  & form {
+    margin-top: 2.5rem;
+  }
+}
+
+.about {
+  & legend {
+    font: var(--font-heading-sm);
+    color: var(--text-heading);
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background: url("../assets/icons/calendar.svg") no-repeat center/contain;
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 0.75rem;
+    }
+  }
+}
+
+.field-container {
+  margin-top: 1.5rem;
+}
+
+.field-wrapper {
+  display: flex;
+  gap: 0.75rem;
+
+  width: 100%;
+}
+
+.field-wrapper + .field-wrapper {
+  margin-top: 1rem;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 0.75rem;
+
+  width: 100%;
+
+  & label {
+    font: var(--font-body-sm);
+  }
+}

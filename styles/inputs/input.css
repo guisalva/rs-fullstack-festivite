@@ -1,0 +1,13 @@
+input {
+  background-color: var(--input-base);
+  color: var(--text-heading);
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  border-radius: 8px;
+
+  padding: 13px 16px;
+
+  &:focus {
+    outline-color: var(--brand-light);
+  }
+}

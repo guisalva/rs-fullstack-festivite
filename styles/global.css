@@ -27,7 +27,7 @@
   /* Input */
   --input-base: #1c1f21;
   --input-stroke: #363b40;
-  --input-base: #869198;
+  --input-placeholder: #869198;
 
   /* Shape */
   --shape-background: #131516;
@@ -76,4 +76,8 @@ h3 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+fieldset {
+  border: none;
 }
