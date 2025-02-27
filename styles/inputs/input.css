@@ -40,3 +40,24 @@ input:focus {
   outline-color: var(--brand-light);
   outline-offset: 0.1px;
 }
+
+input {
+  &:invalid {
+    border-color: var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    font: var(--font-body-xs);
+    color: var(--danger);
+
+    margin-top: 0.25rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}

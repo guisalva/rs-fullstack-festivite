@@ -141,12 +141,18 @@
   align-items: center;
   justify-content: center;
 
+  &:has(:hover) {
+    background-color: var(--shape-hover);
+  }
+
   & input[type="radio"] {
     position: absolute;
     width: 100%;
     height: 100%;
 
     border-radius: 999px;
+
+    cursor: pointer;
   }
 
   &:has(:checked) {
@@ -181,6 +187,10 @@
 
   cursor: pointer;
 
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+
   & figure {
     & img {
       max-height: 4rem;
@@ -205,7 +215,7 @@
 
 footer {
   margin-top: 3rem;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--input-stroke);
 
   & .terms {
     gap: 4px;
@@ -213,7 +223,6 @@ footer {
     margin-top: 2.5rem;
   }
 }
-
 .term-wrapper {
   align-items: center;
   gap: 0.75rem;
@@ -245,7 +254,6 @@ footer {
     }
   }
 }
-
 .action-buttons {
   width: 100%;
   display: flex;
@@ -253,12 +261,24 @@ footer {
 
   & button {
     display: flex;
+    align-items: center;
+    gap: 12px;
 
+    border: none;
+    border-radius: 0.5rem;
+    padding: 13px 20px;
     margin-top: 3rem;
 
-    background-color: red;
+    font: var(--font-body-md);
+    font-weight: 600;
+    color: var(--text-heading);
+    background-color: var(--brand-dark);
 
-    & .btn-img {
+    &:hover {
+      background-color: var(--brand-mid);
+    }
+
+    & img {
       width: 20px;
       height: 20px;
     }

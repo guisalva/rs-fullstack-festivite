@@ -3,6 +3,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
+
+  &:has(:hover) {
+    .custom-file-btn {
+      background-color: var(--shape-hover);
+    }
+  }
 }
 
 .custom-file-btn {
@@ -13,8 +19,6 @@
   border-radius: 8px;
   padding: 12px;
 }
-
-
 
 input[type="file"] {
   all: unset;
